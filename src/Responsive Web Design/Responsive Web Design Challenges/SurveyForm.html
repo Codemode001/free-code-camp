@@ -22,11 +22,6 @@
         background-position: center;
     }
 
-    .label {
-        color: white;
-        font-family: 'poppins', sans-serif;
-    }
-
     .container {
         width: 100%;
         margin: 3.5rem auto 0 auto;
@@ -75,6 +70,13 @@
         font-size: inherit;
         line-height: inherit;
     }
+    label {
+        display: flex;
+        align-items: center;
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+    }
+
     .form-control {
         display: block;
         width: 100%;
@@ -95,6 +97,9 @@
         margin-right: 0.625rem;
         min-height: 1.25rem;
         min-width: 1.25rem;
+    }
+    .input-textarea {
+        
     }
 
 
@@ -220,7 +225,7 @@
 
             <div class="form-group">
                 <p class="label">any comments for me</p>
-                <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+                <textarea id="comments" name="comment" placeholder="Enter your comment here..." class="input-textarea"></textarea>
             </div>
 
             <div>
