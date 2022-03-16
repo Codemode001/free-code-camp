@@ -22,6 +22,11 @@
         background-position: center;
     }
 
+    .label {
+        color: white;
+        font-family: 'poppins', sans-serif;
+    }
+
     .container {
         width: 100%;
         margin: 3.5rem auto 0 auto;
@@ -54,6 +59,7 @@
         background-color: rgba(27, 27, 50, 0.8);
         padding: 2.5rem 0.625rem;
         border-radius: 0.25rem;
+        color: white;
     }
     .form-group {
         margin: 0 auto 1.25rem auto;
@@ -82,8 +88,13 @@
     .form-control:focus {
         border-color: #80bdff;
         outline: 0;
-
-
+    }
+    .input-radio,
+    .input-checkbox {
+        display: inline-block;
+        margin-right: 0.625rem;
+        min-height: 1.25rem;
+        min-width: 1.25rem;
     }
 
 
@@ -109,22 +120,22 @@
 
         <form id="survey form">
             <div class="form-group">
-                <label id="name-label" for="name">Name</label>
+                <label id="name-label" for="name" class="label">Name</label>
                 <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required>
             </div>
 
             <div class="form-group">
-                <label id="email-label" for="email">Email</label>
+                <label id="email-label" for="email" class="label">Email</label>
                 <input type="text" id="email" class="form-control" name="email" placeholder="Enter your email" required>
             </div>
 
             <div class="form-group">
-                <label id="age-label" for="number">Age</label>
+                <label id="age-label" for="number" class="label">Age</label>
                 <input type="number" id="number" class="form-control" name="number" placeholder="Enter your age" required>
             </div>
 
             <div class="form-group">
-                <p>Select your role in my life</p>
+                <p class="label">Select your role in my life</p>
                 <select id="dropdown" class="form-control" name="role" required>
                     <option disabled selected value>select your role</option>
                     <option value="student">Friend</option>
@@ -136,23 +147,23 @@
             </div>
 
             <div class="form-group">
-                <p>Do you like me?</p>
+                <p class="label">Do you like me?</p>
                 <label>
-                <input name="user-recomended" value="definitely" type="radio" >
+                <input name="user-recomended" value="definitely" type="radio" class="input-radio">
                 definitely
             </label>
             <label>
-                <input name="user-recomended" value="No" type="radio" >
+                <input name="user-recomended" value="No" type="radio" class="input-radio">
                 No
             </label>
             <label>
-                <input name="user-recomended" value="Maybe" type="radio" >
+                <input name="user-recomended" value="Maybe" type="radio" class="input-radio">
                 Maybe
             </label>
             </div>
 
             <div class="form-group">
-                <p>How much do you care about me</p>
+                <p class="label">How much do you care about me</p>
                 <select id="DoYouCare" class="form-control" name="care" required>
                     <option disabled selected area>Select an option</option>
                     <option value="careSoMuch">I care so much</option>
@@ -162,53 +173,53 @@
             </div>
 
             <div class="form-group">
-                <p>What do you think should I improve to myself <span class="clue">(Check all that apply)</span></p>
+                <p class="label">What do you think should I improve to myself <span class="clue">(Check all that apply)</span></p>
 
                 <label>
-                    <input name="prefer" value="relationshipWithGod" type="checkbox">
+                    <input name="prefer" value="relationshipWithGod" type="checkbox" class="input-checkbox">
                     relationship with God
                 </label>
                 <label>
-                    <input name="prefer" value="drummingSkills" type="checkbox">
+                    <input name="prefer" value="drummingSkills" type="checkbox" class="input-checkbox">
                     drumming skills
                 </label>
                 <label>
-                    <input name="prefer" value="poetrySkills" type="checkbox">
+                    <input name="prefer" value="poetrySkills" type="checkbox" class="input-checkbox">
                     poetry skills
                 </label>
                 <label>
-                    <input name="prefer" value="programmingSkills" type="checkbox">
+                    <input name="prefer" value="programmingSkills" type="checkbox" class="input-checkbox">
                     programming skills
                 </label>
                 <label>
-                    <input name="prefer" value="socialSkills" type="checkbox">
+                    <input name="prefer" value="socialSkills" type="checkbox" class="input-checkbox">
                     social skills
                 </label>
                 <label>
-                    <input name="prefer" value="looks" type="checkbox">
+                    <input name="prefer" value="looks" type="checkbox" class="input-checkbox">
                     looks
                 </label>
                 <label>
-                    <input name="prefer" value="clothingTaste" type="checkbox">
+                    <input name="prefer" value="clothingTaste" type="checkbox" class="input-checkbox">
                     clothing taste
                 </label>
                 <label>
-                    <input name="prefer" value="body" type="checkbox">
+                    <input name="prefer" value="body" type="checkbox" class="input-checkbox">
                     body
                 </label>
                 <label>
-                    <input name="prefer" value="knowledge" type="checkbox">
+                    <input name="prefer" value="knowledge" type="checkbox" class="input-checkbox">
                     knowledge
                 </label>
                 <label>
-                    <input name="prefer" value="personality" type="checkbox">
+                    <input name="prefer" value="personality" type="checkbox" class="input-checkbox">
                     personality
                 </label>
 
             </div>
 
             <div class="form-group">
-                <p>any comments for me</p>
+                <p class="label">any comments for me</p>
                 <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
             </div>
 
