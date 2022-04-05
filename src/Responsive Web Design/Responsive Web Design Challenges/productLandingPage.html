@@ -122,7 +122,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0 50px;
     }
 }
     nav li {
@@ -138,6 +137,31 @@
             flex-direction: column;
         }
     }
+    #features {
+        margin-top: 30px;
+    }
+    #features .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 125px;
+        width: 20vw;
+        color: darkorange;
+    }
+    @media (max-width: 550px) {
+        #features .icon {
+            display: none;
+        }
+    }
+    #features .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 125px;
+        width: 80vw;
+        padding: 5px;
+    }
+    
 </style>
 
 
