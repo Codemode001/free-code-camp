@@ -1,6 +1,123 @@
 <html>
     <style>
+        body {
+            min-width: 290px;
+            color: #4d4e53;
+            background-color: #ffffff;
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.5;
+        }
+        #nav-bar {
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: rgba(0, 22, 22, 0.4);
+        }
+        header {
+            color: black;
+            margin: 10px;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: thin;
+        }
+        #main-doc header {
+            text-align: left;
+            margin: 0px;
+        }
+        #nav-bar ul {
+            height: 88%;
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        #nav-bar li {
+            color: #4d4e53;
+            border-top: 1px solid;
+            list-style: none;
+            position: relative;
+            width: 100%;
+        }
+        #nav-bar a {
+            display: block;
+            padding: 10px 30px;
+            color: #4d4e53;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #main-doc {
+            position: absolute;
+            margin-left: 310px;
+            padding: 20px;
+            margin-bottom: 110px;
+        }
+        section article {
+            margin-bottom: 110px;
+            margin: 15px;
+            font-size: 0.96em;
+        }
+        section li {
+            margin: 15px 0px 0px 20px;
+        }
+        code {
+            display: block;
+            text-align: left;
+            white-space: pre-line;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        @media only screen and (max-width: 815px) {
+            /*for mobile phones only*/
+            #navbar ul {
+                border: 1px solid;
+                height: 207px;
+            }
+            #nav-bar {
+                background-color: white;
+                position: absolute;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-height: 275px;
+                border: none;
+                z-index: 1;
+                border-bottom: 2px solid;
+        }
+        #main-doc {
+                 position: relative;
+                 margin-left: 0px;
+                 margin-top: 270px;
+        }
+        }
+        @media only screen and (max-width: 400px) {
+            #main-doc {
+                margin-left: -10px;
+            }
+        }
+        code {
+            margin-left: -20px;
+            width: 100%;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 45px;
+            min-width: 233px;
+        }
+
     </style>
+
+
+
+
     <body translate="no">
     <nav id="nav-bar">
         <header>My lifes documentaion</header>
@@ -15,13 +132,13 @@
                 <a class="nav-link" href="#the_encounter">The encounter</a>
             </li>
             <li>
-                <a class="nav-link" href="#the_beggining_of_a_new_start">The changed life</a>
+                <a class="nav-link" href="#start">The start of a new beggining</a>
             </li>
             <li>
-                <a class="nav-link" href="the-struggle">The struggle</a>
+                <a class="nav-link" href="#the-struggle">The struggle</a>
             </li>
             <li>
-                <a class="nav-link" href="conclution">Conclution</a>
+                <a class="nav-link" href="#conclution">Conclution</a>
             </li>
         </ul>
     </nav>
@@ -51,14 +168,14 @@
                     <code>glory to God!</code>
                 </article>
         </section>
-        <section class="main-section" id="the_beginning_of_a_new_start">
-            <header class="section-header">The beggining of a new start</header>
+        <section class="main-section" id="start">
+            <header class="section-header">The start of a new beggining</header>
                 <article>
                     <p>In that moment I understood na hindi ko kayang makamit ang happiness na hinahanap ko gamit ang sarili kong lakas, I understood na kaya pala masaya sya because she has something na wala ako that's the faith na meron sya sa Panginoon! And I asked God, "Lord paano ko po makakamit ang kasayahan na nasa kanya? na kahit sa mga mahihirap na sitwasyon ay kaya nyang maging masaya. I just asked God and then kinabukasan ay may pinadala ang Dios tao para matulungan ako, that's how powerful God is kaya nyang gawin ang mga bagay para sayo bastat ikakabuti mo. I met my old friend na dati kong kasama sa mga kalokohan but I was so surprised kasi nakikita ko sa kanya ang nakikita kong liwanag sa babaeng pinakilala ng Panginoon. Back then, I knew na ito na ang simula.</p>
                     <code>glory to God!</code>
                 </article>
         </section>
-        <section class="main-section" id="the_struggle">
+        <section class="main-section" id="the-struggle">
             <header class="section-header">The Struggle</header>
             <article>
                 <p>After that start, never did I thought na hindi pala magiging madali ang buhay na may kinikilalang Panginoon. Maraming mga paghihirap at sakit ang dumarating, minsan naiisip ko na mas masakit palang mag lingkod sa Panginoon kaysa sa buhay ko noon. Pero the only difference is that I know na palaging nandyan ang Panginoon para sa akin, I don't mind these problems kasi alam kong there's hope! There's light! There's a way! God will make a way!</p>
